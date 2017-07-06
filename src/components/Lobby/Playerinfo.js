@@ -23,7 +23,7 @@ class Playerinfo extends PureComponent {
   }
 }
 
-Playerinfo.PropTypes = {
+Playerinfo.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
     bio: PropTypes.string.isRequired,

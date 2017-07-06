@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import SettingsFormMulti from './SettingsFormMulti';
 import { onSettingsSubmit } from '../../actions';
 
-class Settings extends Component {
+class Settings extends PureComponent {
   render() {
     return (
       <div>
@@ -16,8 +16,9 @@ class Settings extends Component {
   }
 }
 
-Settings.PropTypes = {
+Settings.propTypes = {
   onSettingsSubmit: PropTypes.func.isRequired,
+  players: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 const selected = state => ({ players: state.settings.players });

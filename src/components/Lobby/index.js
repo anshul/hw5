@@ -18,7 +18,7 @@ class Lobby extends PureComponent {
   }
 }
 
-Lobby.PropTypes = {
+Lobby.propTypes = {
   settings: PropTypes.shape({
     players: PropTypes.arrayOf(PropTypes.object).isRequired,
   }).isRequired,

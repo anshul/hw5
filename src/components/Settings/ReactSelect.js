@@ -5,6 +5,7 @@ import 'react-select/dist/react-select.css';
 import s from './styles';
 
 class ReactSelect extends t.form.Select {
+  // eslint-disable-next-line class-methods-use-this
   getTemplate() {
     return locals => {
       // handle error status
