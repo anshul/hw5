@@ -1,0 +1,33 @@
+.formWrap{
+	width: 770px;
+	background: #fff;
+	color: #72727d;
+	box-shadow: 0 1px 2px rgba(43,59,93,0.29);
+	border-radius: 3px;
+    margin: 10px 0 0;
+    padding: 10px;
+    font: normal 12px arial;
+    display: flex;
+    flex-direction: column;
+}
+
+.src_field_box{
+	width: 452px;
+    line-height: 35px;
+    border: 1px solid #dfe0e3;
+    border-radius: 3px;
+    float: left;
+}
+
+.formWrap > div {
+	margin: 0 0 15px 0;
+}
+
+.formWrap > div > div > label{
+	width: 70px;
+	float: left
+}
+
+.has-error{
+	border: 1px solid red;
+}
